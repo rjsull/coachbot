@@ -1,0 +1,20 @@
+{
+  "schema": "coachbot/master-checkin-v1",
+  "week_ending": "YYYY-MM-DD",
+  "weights": [],
+  "nutrition_adherence": "on",
+  "training_sessions": 0,
+  "biofeedback": {
+    "hoops_energy": "na",
+    "sleep_quality": "on",
+    "swing_tgu_quality": "on"
+  },
+  "rounds_over_15_min": false,
+  "joint_ache": false,
+  "elbow_grumble": false,
+  "portion_recheck_complete": false,
+  "waist_inches": null,
+  "neck_inches": null,
+  "medical_flags": [],
+  "notes": ""
+}

@@ -1,0 +1,67 @@
+EXAMPLE TRAINING + NUTRITION PLAN
+=================================
+This is the written plan the shipped example JSON encodes. It is an invented
+example, included so the engine runs out of the box. Replace it with your own
+written plan and matching JSON.
+
+Baseline
+--------
+Height 5'10". Starting point is whatever your first check-in records. Weight is
+always the weekly mean of morning weigh-ins; one weigh-in is enough, more is
+better.
+
+Targets
+-------
+  Calories, training days ........ 2750
+  Calories, off days ............ 2600
+  Protein ....................... 180 g
+  Training days per week ........ 4
+  Off days per week ............. 3
+  Training sessions ............ 5 (the fifth is a short conditioning or
+                                   skill session, not a full lifting day)
+
+Rate of loss
+------------
+  0.35 to 0.4 lb per week. Inside the band, hold everything. Outside it for a
+  single week, still hold: one week is not a trend.
+
+Landing
+-------
+  Weight ......................... 166 to 168 lb
+  Waist (navel) .................. 32 to 32.5 in
+  Ceiling ........................ May 2027
+  Early-stop decision band ....... 169 to 171 lb, taken with a completed
+                                   portion recheck and a visible waist change
+
+Guardrails
+----------
+Three biofeedback signals: session energy, sleep quality, and movement quality
+on swing work. A signal that moves from fine to worse since the last check-in
+raises a recovery guardrail: add 100 to 150 calories and repeat last week's
+training. Only a worsening status creates a new increase. A signal that is
+already bad and stays bad is not a new event.
+
+Stall protocol
+--------------
+Three slow or flat weeks in a row:
+  Step one  ... Recheck portions honestly, including the ones that are easy to
+                round down. Nothing else changes.
+  Step two  ... Only after the recheck is marked complete, reduce dinner carbs
+                by about one third.
+
+Deload
+------
+As needed, not scheduled. The engine surfaces stop conditions. It never applies
+a deload on its own, and a deload week earns no load increase afterwards.
+
+Progression
+-----------
+Load climbs only when the week was on pace and no guardrail fired. Blocks run
+two weeks. Load is frozen after the freeze date so the landing is not chased
+with new strength work.
+
+Medical
+-------
+This is deterministic plan-tracking software, not medical advice. Any medical
+flag in a check-in stops automated recommendations entirely and routes to a
+qualified professional.

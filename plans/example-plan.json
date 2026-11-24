@@ -1,0 +1,82 @@
+{
+  "schema": "coachbot/master-plan-v1",
+  "name": "Example Training + Nutrition Plan",
+  "source_document": "plans/EXAMPLE_PLAN.txt",
+  "source_note": "Example plan shipped with the repo so the engine runs out of the box. Every rule below is deterministic and quotable; swap in your own JSON to use it for real.",
+  "reported_training_week": 10,
+  "baseline_date_label": "2026-11-02",
+  "weight_unit": "lb",
+  "height_in": 70,
+  "landing": {
+    "weight_lb": [
+      166,
+      168
+    ],
+    "waist_inches": [
+      32,
+      32.5
+    ],
+    "ceiling_month": "2027-05",
+    "early_stop_decision_weight_lb": [
+      169,
+      171
+    ],
+    "early_stop_requires": [
+      "abs visible relaxed",
+      "hoops energy intact"
+    ]
+  },
+  "targets": {
+    "calories_by_day": {
+      "training": 2750,
+      "off": 2600
+    },
+    "training_days_per_week": 4,
+    "off_days_per_week": 3,
+    "protein_g": 180,
+    "training_sessions": 5
+  },
+  "target_weekly_loss_lb": {
+    "min": 0.35,
+    "max": 0.4
+  },
+  "guardrails": {
+    "signals": [
+      "hoops_energy",
+      "sleep_quality",
+      "swing_tgu_quality"
+    ],
+    "calorie_increase": [
+      100,
+      150
+    ],
+    "source": "Example Plan / Quick Rule 13: hoops energy, sleep, or swing quality drop -> eat a bit more; Tracking specifies 100-150 more",
+    "rule": "Only a worsening status creates a new increase proposal; an unresolved status needs review, not automatic compounding."
+  },
+  "progression": {
+    "current_block": "Current block: barbell row 3x5 at working weight; pull-ups 6 per round.",
+    "future_blocks": {
+      "W12-13": "Goblet squat 3x5 to 3x6 at working weight; pull-ups 7 per round.",
+      "W14-15": "Split squats 3x8 to 3x10 at working weight; pull-ups 7 per round.",
+      "W16-17": "Barbell row 3x5 to 3x6 at working weight; pull-ups 8 per round."
+    },
+    "load_freeze_after": "2027-02-01",
+    "source": "Example Plan / Progression and Three Stop Rules"
+  },
+  "stall": {
+    "weeks": 3,
+    "step_one": "Recheck portions honestly, including butter and oil; make no carb change yet.",
+    "step_two": "After the portion recheck is complete, reduce dinner carbs by about one-third. Stop there.",
+    "source": "Example Plan / Stall Protocol"
+  },
+  "deload": {
+    "triggers": [
+      "sleep tanked",
+      "joints grumbling",
+      "swing quality dropping"
+    ],
+    "source": "Example Plan / Deload \u2014 As Needed",
+    "rule": "The engine surfaces stop conditions; it does not auto-apply a deload."
+  },
+  "medical_disclaimer": "This is deterministic plan-tracking software, not medical care. Medical flags pause automated adjustment suggestions. Seek qualified help for health concerns and urgent care for emergency symptoms."
+}
